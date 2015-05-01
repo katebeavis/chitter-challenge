@@ -9,9 +9,13 @@
 	<body>
 		<nav>
 			<ul>
+			<% if current_user %>
+				<li><a href='/'>Home</a></li>
+				<% else %>
 				<li><a href='/sessions/new'>Log In</a></li>
 				<li><a href='/users/new'>Sign Up</a>
-				<li><a href='/'>Home</a></li>	
+				<li><a href='/'>Home</a></li>
+				<% end %>
 			</ul>
 		</nav>
 		<h1>Chitter</h1>

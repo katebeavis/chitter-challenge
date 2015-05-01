@@ -75,7 +75,9 @@ feature 'User signs out' do
   before(:each) do
     User.create(:email => 'test@test.com',
                 :password => 'test',
-                :password_confirmation => 'test')
+                :password_confirmation => 'test',
+                :name => 'test',
+                :username => 'test')
   end
 
   scenario 'while being signed in' do

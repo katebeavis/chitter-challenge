@@ -1,6 +1,9 @@
+require 'codeclimate-test-reporter'
+CodeClimate::TestReporter.start
+
 ENV["RACK_ENV"] = 'test'
 
-require './lib/server' 
+require './app/server'
 require 'database_cleaner'
 require 'capybara/rspec'
 

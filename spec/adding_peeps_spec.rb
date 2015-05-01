@@ -1,5 +1,5 @@
 require 'spec_helper'
-require './lib/server'
+require './app/server'
 
 feature 'User adds a new peep only when signed in' do
 
@@ -10,7 +10,7 @@ feature 'User adds a new peep only when signed in' do
                 :name => 'test',
                 :username => 'test')
     end
-  
+
   scenario 'when browsing the homepage' do
     expect(Peep.count).to eq(0)
     visit '/'
