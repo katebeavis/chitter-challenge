@@ -47,6 +47,8 @@ $ CREATE DATABASE chitter_challenge_test
 $ CREATE DATABASE chitter_challenge_development
 $ \q
 $ rake auto_migrate
+$ rackup
+Visit http://localhost:9292
 ```
 
 ## To Run Tests
