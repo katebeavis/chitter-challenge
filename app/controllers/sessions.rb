@@ -1,7 +1,6 @@
 class Chitter < Sinatra::Base
-
   get '/sessions/new' do
-    erb :"sessions/new"
+    erb :'sessions/new'
   end
 
   post '/sessions' do
@@ -12,14 +11,13 @@ class Chitter < Sinatra::Base
       redirect to('/')
     else
       flash[:errors] = ['The email or password is incorrect']
-      erb :"sessions/new"
+      erb :'sessions/new'
     end
   end
 
   delete '/sessions' do
     session.clear
     flash[:notice] = 'Goodbye!'
-    redirect to ('/')
+    redirect to('/')
   end
-
 end

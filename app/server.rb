@@ -18,11 +18,10 @@ DataMapper.setup(:default, ENV['DATABASE_URL'] || "postgres://localhost/chitter_
 DataMapper.finalize
 
 class Chitter < Sinatra::Base
-
   helpers ApplicationHelpers
 
-  set :public_folder, Proc.new { File.join(root, '..', '..', "public") }
-  set :views, Proc.new { File.join(root, "..", "views") }
+  set :public_folder, proc { File.join(root, '..', '..', 'public') }
+  set :views, proc { File.join(root, '..', 'views') }
 
   enable :sessions
   set :super_sessions, 'super secret'

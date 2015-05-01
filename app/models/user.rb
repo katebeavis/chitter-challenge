@@ -1,13 +1,12 @@
 require 'bcrypt'
 class User
-
   include DataMapper::Resource
 
   property :id, Serial
-  property :email, String,:unique => true, :required => true
-  property :password_digest, Text, :required => true
-  property :name, String, :required => true
-  property :username, String, :unique => true
+  property :email, String, unique: true, required: true
+  property :password_digest, Text, required: true
+  property :name, String, required: true
+  property :username, String, unique: true
 
   attr_reader :password
   attr_accessor :password_confirmation
@@ -21,12 +20,11 @@ class User
   end
 
   def self.authenticate(email, password)
-    user = User.first(:email => email)
+    user = User.first(email: email)
     if user && BCrypt::Password.new(user.password_digest) == password
       user
     else
       nil
     end
   end
-
 end
