@@ -1,3 +1,4 @@
+require 'support/test_helper'
 require 'spec_helper'
 
 feature 'User signs up' do
@@ -5,21 +6,6 @@ feature 'User signs up' do
     expect { sign_up }.to change(User, :count).by(1)
     expect(page).to have_content('What\'s happening @kittykat?')
     expect(User.first.email).to eq('kate@kate.com')
-  end
-
-  def sign_up(email = 'kate@kate.com',
-              password = 'kate',
-              password_confirmation = 'kate',
-              name = 'kate beavis',
-              username = 'kittykat')
-    visit '/users/new'
-    expect(page.status_code).to eq(200)
-    fill_in :email, with: email
-    fill_in :password, with: password
-    fill_in :password_confirmation, with: password_confirmation
-    fill_in :name, with: name
-    fill_in :username, with: username
-    click_button 'Sign up'
   end
 
   scenario 'with a password that does not match' do
@@ -78,13 +64,6 @@ feature 'User signs up' do
       click_button 'Sign out'
       expect(page).to have_content('Goodbye!')
       expect(page).not_to have_content('What\'s happening @test?')
-    end
-
-    def sign_in(email, password)
-      visit('/sessions/new')
-      fill_in 'email', with: email
-      fill_in 'password', with: password
-      click_button 'Sign in'
     end
   end
 end
