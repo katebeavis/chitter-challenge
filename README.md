@@ -18,7 +18,7 @@ Through this challenge I felt like I got a solid understanding of PostgreSQL dat
 
 I also feel although this kind of project would be suited better to a Rails framework, it was good to understand the benefits of a lightweight framework like Sinatra.
 
-## Heroku
+## Heroku & Screenshots
 [Chitter Challenge](https://chitter-kate.herokuapp.com)
 <div align="center">
   <img width="90%" src="public/images/chitter-header.png">
