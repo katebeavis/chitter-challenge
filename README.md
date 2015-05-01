@@ -5,11 +5,11 @@ Chitter is a Twitter clone that allows users to post messages ('peeps') to a pub
 
 Our brief was to implement the following features:
 
-- The ability for a user to sign up to the service
-- The ability for a user to to log in and log out
-- The user must be able to post messages to a public stream
-- The messages must be displayed in chronological order
-- The messages must display the users 'handle' and the time posted
+- A user will be able to sign up to the service.
+- The user can log in and log out.
+- The user must be able to post messages to a public stream.
+- The messages must be displayed in chronological order.
+- The messages must display the users 'handle' and the time posted.
 
 ## Objectives
 To understand databases, database relations and user management including the need for encrypting passwords.
