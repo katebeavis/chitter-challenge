@@ -7,7 +7,7 @@ Our brief was to implement the following features:
 
 - A user will be able to sign up to the service.
 - The user can log in and log out.
-- The user must be able to post messages to a public stream.
+- They must be able to post messages to a public stream.
 - The messages must be displayed in chronological order.
 - The messages must display the users 'handle' and the time posted.
 
