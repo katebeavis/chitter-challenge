@@ -13,4 +13,5 @@ gem 'sinatra-partial'
 group :test do
   gem 'codeclimate-test-reporter', require: nil
   gem 'rspec'
+  gem 'rake'
 end
