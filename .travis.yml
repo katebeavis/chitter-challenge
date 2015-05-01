@@ -10,3 +10,7 @@ before_script:
 script:
   - bundle exec rake auto_migrate RACK_ENV=test
   - bundle exec rspec spec
+
+addons:
+  code_climate:
+    repo_token: 96d004362b3a90c4f1b4c68fcdc9ed2547f4c4234d6af44a0e336778e6305e88
