@@ -21,10 +21,10 @@ I also feel although this kind of project would be suited better to a Rails fram
 ## Heroku
 [Chitter Challenge](https://chitter-kate.herokuapp.com)
 <div align="center">
-  <img width="80%" src="public/images/chitter-header.png">
+  <img width="90%" src="public/images/chitter-header.png">
 </div>
 <div align="center">
-  <img width="80%" src="public/images/chitter-posts.png">
+  <img width="90%" src="public/images/chitter-posts.png">
 </div>
 
 ## Technology
